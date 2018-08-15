@@ -8,20 +8,23 @@ def fizz_buzz (num)
         "below 0"
     
     elsif
-        num % 15 == 0 
+        has_zero_remainer?(num, 15) 
         "fizz buzz"
 
     elsif 
-        num % 5 == 0
+        has_zero_remainer?(num, 5)
         "buzz"
     
     elsif 
-        num % 3 == 0   
+        has_zero_remainer?(num, 3)
         "fizz"
 
-        
     else
         num
     
     end
+end
+
+def has_zero_remainer?(num, div)
+    num % div == 0
 end
